@@ -36,7 +36,7 @@ fun Contador(contadorViewModel: ContadorViewModel) {
         )
 
         FloatingActionButton(
-            onClick = { contadorViewModel.addContador(contador)}, modifier = Modifier
+            onClick = { contadorViewModel.addContador()}, modifier = Modifier
                 .align(Alignment.BottomEnd)
                 .padding(15.dp),
 
@@ -45,7 +45,7 @@ fun Contador(contadorViewModel: ContadorViewModel) {
         }
 
         FloatingActionButton(
-            onClick = { contadorViewModel.minusContador(contador) }, modifier = Modifier
+            onClick = { contadorViewModel.minusContador() }, modifier = Modifier
                 .align(Alignment.BottomStart)
                 .padding(15.dp),
 
